@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 50px;
+            width: 200px;
+            color: brown;
+            background-color: yellow;
+            font-size: 30px;
+        }
+        /*pseudo classes*/
+        button:hover{
+            background-color: blue;
+            color: azure;
+            border-radius: 50%;
+
+        }
+        /*pseudo elements*/
+        input::placeholder{
+            text-align: center;
+        }
+        p::first-letter{
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(238, 12, 87);
+        }
+        p::first-line{
+            color: rgb(78, 17, 221);
+        }
+        ul{
+            list-style-type: lower-greek;
+            list-style-position: inside;
+            list-style-image:url(./bg.jpeg);
+            
+            
+        }
+        td{
+            text-align: center;
+            font-weight: bolder;
+            color: blue;
+        }
+        tr:nth-child(even){
+            background-color: deeppink;
+            
+        }
+        tr :nth-child(odd){
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <button>click here</button>
+    <input type="text" placeholder="enter first name">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iure velit perferendis distinctio eligendi,
+         accusamus ratione reprehenderit sit id illo quidem.
+          Minus facere ratione nisi ex quis vitae quibusdam esse neque.</p>
+          <ul>
+            <li>mango</li>
+            <li>banana</li>
+            <li>graps</li>
+            <li>apple</li>
+          </ul>
+          <table rules="all" border="solid 2px" width="200px" height="200px" style="background-color: aqua; border: solid red 5px;" >
+            <thead>
+                <tr>
+                    <th>sari</th>
+                    <th>jyo</th>
+                    <th>anu</th>
+                    <th>pavani</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+
+          </table>
+</body>
+</html>
